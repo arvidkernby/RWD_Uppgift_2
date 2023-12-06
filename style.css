@@ -1,0 +1,129 @@
+.Bakgrund {
+    background-image: url('./images/snow_winter_trees.jpg');
+    background-size: contain;
+    border: 3px solid #d6001c;
+    padding: 10px;
+    border-radius: 10px;
+    height: 510px;
+}
+
+.Länkar {
+    display: flex;
+    padding: 10px;
+    border: 3px solid #d6001c;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.Bilder {
+    color: #d6001c;
+    padding: 10px;
+    max-width: 33.33%;
+    max-height: 50px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.Webbutveckling {
+    display: flex;
+    padding: 10px;
+}
+
+.Mitten {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid #d6001c;
+    border-radius: 10px;
+}
+
+.Vänster {
+    display: flex;
+    padding: 10px;
+    border: 3px solid #d6001c;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.Mellan {
+    display: flex;
+    padding: 10px;
+    border: 3px solid #d6001c;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.Julträd {
+    border: 3px solid #d6001c;
+    border-radius: 10px;
+    width: 100px;
+    height: 340px;
+}
+
+.Sidfot {
+    border: 3px solid #d6001c;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.standard-font {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif
+}
+
+h1 {
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+/* Mobile Styles läggs i body och läses in som standard, högst 640 pixlar bred */
+@media only screen and (max-width: 640px) {
+    .Länkar {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Bakgrund {
+        height: 250px;
+    }
+
+    .Vänster {
+        display: none;
+    }
+
+    .Höger {
+        display: none;
+    }
+}
+
+/* Tablet Styles reglerna läses in om skärmbredden har mellan 641 och 1007 pixlar */
+@media only screen and (min-width: 641px) and (max-width: 1007px) {
+    .Länkar {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .Vänster {
+        margin-right: 10px;
+        padding-bottom: 80px;
+        width: 400px;
+        .Bilder {
+            max-width: 80%;
+        }
+    }
+
+    .Höger {
+        display: none;
+    }
+}
+
+/* Desktop Styles reglerna läses in om skärmbredden är minst 1008 pixlar */
+@media only screen and (min-width: 1008px) {}
